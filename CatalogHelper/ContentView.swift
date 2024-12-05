@@ -125,19 +125,6 @@ struct ContentView: View {
     }
 }
 
-struct IconView: View {
-    var body: some View {
-        ZStack {
-            Image(systemName: "app.fill")
-                .font(.system(size: CGFloat(32)))
-                .foregroundColor(.accent)
-            Image(systemName: "books.vertical")
-                .font(.system(size: CGFloat(16)))
-                .foregroundColor(.white)
-        }
-    }
-}
-
 struct InfoView: View {
     var isDebug: String {
         #if DEBUG
